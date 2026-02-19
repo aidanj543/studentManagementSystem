@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Interactive Student Management System</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <header>
+            <div class = "title">
+                <h1>Interactive Student Management System</h1>
+            </div>
+            <div class = "controls">
+                <div class = "search-bar">
+                    <input type = "text" id = "searchInput" placeholder = "Search students...">
+                    <button id = "searchButton">Search</button>
+                </div>
+                <div class = "sort">
+                    <label for="sortSelect">Sort by</label>
+                    <select id="sortSelect">
+                        <option value="name">Name</option>
+                        <option value="age">Age</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="table-section">
+                <div class="table-wrapper">
+                    <table id="studentsTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Major</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentsTbody">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Add New Student</h2>
+                <form id="addStudentForm">
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="0" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="major">Major:</label>
+                        <input type="text" id="major" name="major">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="primary">Add Student</button>
+                        <button type="button" id="resetForm">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+    <script src = "script.js"></script>
+</html>
