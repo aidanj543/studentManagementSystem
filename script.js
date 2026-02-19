@@ -77,3 +77,26 @@ function sortStudents(){
     renderTable(sorted);
 
 }
+
+function addStudent(event){
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const age = parseInt(document.getElementById("age").value);
+    const major = document.getElementById("major").value.trim();
+
+    if(!name || isNaN(age)|| age<0){
+        alert("This is not valid name or age");
+        return;
+    }
+
+    const newStudent = {
+        id: ++currentId,
+        name,
+        age,
+        major
+    }
+    students.push(newStudent);
+    renderTable(students, newStudent.id);
+    document.getElementById("addStudentForm").reset();
+}
