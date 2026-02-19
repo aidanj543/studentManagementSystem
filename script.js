@@ -24,3 +24,32 @@ function loadStudents(){
         })
         .catch(error => console.error("Couldn't Load Students:", error));
 }
+
+function renderTable(data, highlightId = null) {
+    const tbody = document.getElementById("studentsTbody");
+    tbody.innerHTML = "";
+
+    if (data.length === 0) {
+        const row = document.createElement("tr");
+        row.innerHTML = `<td colspan="3" style="text-align:center;">No students found</td>`;
+        tbody.appendChild(row);
+        return;
+    }
+
+    data.forEach(student => {
+        const row = document.createElement("tr");
+
+        if (student.id === highlightId) {
+            row.classList.add("highlight");
+            setTimeout(() => row.classList.remove("highlight"), 2000);
+        }
+
+        row.innerHTML = `
+            <td>${student.name}</td>
+            <td>${student.age}</td>
+            <td>${student.major}</td>
+        `;
+
+        tbody.appendChild(row);
+    });
+}
