@@ -53,3 +53,14 @@ function renderTable(data, highlightId = null) {
         tbody.appendChild(row);
     });
 }
+
+
+function searchStudents(){
+    const query = document.getElementById("searchInput").value.toLowerCase();
+    const filtered = students.filter(s => 
+        s.name.toLowerCase().includes(query) ||
+        s.age.toString().includes(query) ||
+        s.major.toLowerCase().includes(query)
+    );
+    renderTable(filtered);
+}
