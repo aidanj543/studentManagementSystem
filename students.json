@@ -1,5 +1,6 @@
 [
-  { "id": 1, "name": "John", "age": 21, "major": "CS" },
-  { "id": 2, "name": "Jim", "age": 22, "major": "IT" },
-  { "id": 3, "name": "Joe", "age": 20, "major": "SE" }
+  { "id": 1, "name": "Joan", "age": 21, "major": "BS" },
+  { "id": 2, "name": "Axel", "age": 21, "major": "BS" },
+  { "id": 3, "name": "Andres", "age": 19, "major": "CS" },
+  { "id": 4, "name": "Danny", "age": 21, "major": "PSY" }
 ]
