@@ -1,6 +1,6 @@
 [
-  { "id": 1, "name": "Joan", "age": 21, "major": "BS" },
-  { "id": 2, "name": "Axel", "age": 21, "major": "BS" },
-  { "id": 3, "name": "Andres", "age": 19, "major": "CS" },
-  { "id": 4, "name": "Danny", "age": 21, "major": "PSY" }
+  { "id": 1, "name": "Joan", "age": 21, "major": "Business" },
+  { "id": 2, "name": "Axel", "age": 21, "major": "Business" },
+  { "id": 3, "name": "Andres", "age": 19, "major": "Computer Science" },
+  { "id": 4, "name": "Danny", "age": 21, "major": "Psychology" }
 ]
