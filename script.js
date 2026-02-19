@@ -64,3 +64,16 @@ function searchStudents(){
     );
     renderTable(filtered);
 }
+
+function sortStudents(){
+    const criteria = document.getElementById("sortSelect").value;
+    let sorted = [...students];
+
+    if (criteria === "name"){
+        sorted.sort((a,b) => a.name.localeCompare(b.name));
+    } else if (criteria ==="age"){
+        sorted.sort((a,b) => a.age - b.age);
+    }
+    renderTable(sorted);
+
+}
