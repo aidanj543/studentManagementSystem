@@ -16,6 +16,7 @@ header {
   color: white;
   padding: 20px;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 
@@ -45,3 +46,68 @@ header h1 {
   padding: 10px;
   margin: 5px;
 }
+
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.table-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #444247;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+.form-section {
+  background-color: white;
+  padding: 20px;
+}
+
+.form-section h2 {
+  color: #444247;
+  margin-bottom: 15px;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.form-actions {
+  margin-top: 15px;
+}
+
